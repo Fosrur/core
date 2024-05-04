@@ -1,0 +1,659 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>core</name>
+    </assembly>
+    <members>
+        <member name="T:core.Controllers.DeleteController">
+            <summary>
+            Definition of DeleteController
+            </summary>
+        </member>
+        <member name="F:core.Controllers.DeleteController.SQLConfig">
+            <summary>
+            Definition of connexString
+            </summary>
+        </member>
+        <member name="M:core.Controllers.DeleteController.#ctor(Microsoft.Extensions.Options.IOptions{core.Models.SQLConfig})">
+            <summary>
+            Definition of DeleteController
+            </summary>
+        </member>
+        <member name="M:core.Controllers.DeleteController.DeleteAddressBook(System.String,System.Collections.Generic.List{core.Models.Json.AddressBook.AddressBook})">
+            <summary>
+            Delete AddressBook
+            </summary>
+        </member>
+        <member name="M:core.Controllers.DeleteController.DeleteCityv(System.String,System.Collections.Generic.List{core.Models.Json.City.City})">
+            <summary>
+            Delete City
+            </summary>
+        </member>
+        <member name="T:core.Controllers.InputController">
+            <summary>
+            Definition of InputController
+            </summary>
+        </member>
+        <member name="F:core.Controllers.InputController.SQLConfig">
+            <summary>
+            Definition of connexString
+            </summary>
+        </member>
+        <member name="M:core.Controllers.InputController.#ctor(Microsoft.Extensions.Options.IOptions{core.Models.SQLConfig})">
+            <summary>
+            Definition of InputController
+            </summary>
+        </member>
+        <member name="M:core.Controllers.InputController.SetAddressBook(System.String,System.Collections.Generic.List{core.Models.Json.AddressBook.AddressBook})">
+            <summary>
+            Set AddressBook
+            </summary>
+        </member>
+        <member name="M:core.Controllers.InputController.SetCity(System.String,System.Collections.Generic.List{core.Models.Json.City.City})">
+            <summary>
+            Set City
+            </summary>
+        </member>
+        <member name="T:core.Controllers.OutputController">
+            <summary>
+            Definition of OutputController
+            </summary>
+        </member>
+        <member name="F:core.Controllers.OutputController.SQLConfig">
+            <summary>
+            Definition of connexString
+            </summary>
+        </member>
+        <member name="M:core.Controllers.OutputController.#ctor(Microsoft.Extensions.Options.IOptions{core.Models.SQLConfig})">
+            <summary>
+            Definition of OutputController
+            </summary>
+        </member>
+        <member name="M:core.Controllers.OutputController.GetAddressBook(System.String,core.Models.Json.AddressBook.AddressBook)">
+            <summary>
+            Gets AddressBook
+            </summary>
+        </member>
+        <member name="M:core.Controllers.OutputController.GetCity(System.String,core.Models.Json.City.City)">
+            <summary>
+            Gets City
+            </summary>
+        </member>
+        <member name="M:core.Controllers.OutputController.GetGender(System.String,core.Models.Json.Gender.Gender)">
+            <summary>
+            Gets Gender
+            </summary>
+        </member>
+        <member name="T:core.Controllers.UpdateController">
+            <summary>
+            Definition of UpdateController
+            </summary>
+        </member>
+        <member name="F:core.Controllers.UpdateController.SQLConfig">
+            <summary>
+            Definition of connexString
+            </summary>
+        </member>
+        <member name="M:core.Controllers.UpdateController.#ctor(Microsoft.Extensions.Options.IOptions{core.Models.SQLConfig})">
+            <summary>
+            Definition of UpdateController
+            </summary>
+        </member>
+        <member name="M:core.Controllers.UpdateController.SetAddressBook(System.String,core.Models.Json.AddressBook.AddressBook)">
+            <summary>
+            Sets AddressBook
+            </summary>
+        </member>
+        <member name="M:core.Controllers.UpdateController.SetCity(System.String,core.Models.Json.City.City)">
+            <summary>
+            Sets City
+            </summary>
+        </member>
+        <member name="T:core.Extensions.BuilderExtensions">
+            <summary>
+            Definition of BuilderExtensions
+            </summary>
+        </member>
+        <member name="M:core.Extensions.BuilderExtensions.AddCoreBuilderExtensions(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment)">
+            <summary>
+            Definition of AddCoreBuilderExtensions
+            </summary>
+        </member>
+        <member name="M:core.Extensions.BuilderExtensions.UseOtherBuilder(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment)">
+            <summary>
+            Definition of UseOtherBuilder
+            </summary>
+        </member>
+        <member name="T:core.Extensions.ListExtensions">
+            <summary>
+            Definition of ListExtensions
+            </summary>
+        </member>
+        <member name="M:core.Extensions.ListExtensions.ToDataTable``1(System.Collections.Generic.List{``0})">
+            <summary>
+            Returns DataTable from List<typeparamref name="T"/>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="iList"></param>
+            <returns></returns>
+        </member>
+        <member name="T:core.Extensions.ServiceExtensions">
+            <summary>
+            Definition of ServiceExtensions
+            </summary>
+        </member>
+        <member name="M:core.Extensions.ServiceExtensions.AddPersistenceServiceExtensions(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Definition of AddPersistenceServiceExtensions
+            </summary>
+        </member>
+        <member name="T:core.Models.AppSettings">
+            <summary>
+            Definition of AppSettings
+            </summary>
+        </member>
+        <member name="P:core.Models.AppSettings.Secret">
+            <summary>
+            Gets or sets the Secret.
+            </summary>
+        </member>
+        <member name="T:core.Models.DBType">
+            <summary>
+            DBType Configuration 
+            </summary>
+        </member>
+        <member name="P:core.Models.DBType.dbType">
+            <summary>
+            Gets or sets the Type.
+            </summary>
+        </member>
+        <member name="M:core.Models.DBType.ToString">
+            <summary>
+            OverrideToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:core.Models.Json.AddressBook.AddressBook">
+            <summary>
+            Definition of AddressBook
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.Id">
+            <summary>
+            Definition of Id
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.Nome">
+            <summary>
+            Definition of Nome
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.Cognome">
+            <summary>
+            Definition of Cognome
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.IdSesso">
+            <summary>
+            Definition of IdSesso
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.Sesso">
+            <summary>
+            Definition of Sesso
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.DataNascita">
+            <summary>
+            Definition of DataNascita
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.NumeroTelefono">
+            <summary>
+            Definition of NumeroTelefono
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.Email">
+            <summary>
+            Definition of Email
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.IdCitta">
+            <summary>
+            Definition of IdCitta
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.Citta">
+            <summary>
+            Definition of Citta
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.CreatedUser">
+            <summary>
+            Definition of CreatedUser
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.CreatedDate">
+            <summary>
+            Definition of CreatedDate
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.UpdatedUser">
+            <summary>
+            Definition of UpdatedUser
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.UpdatedDate">
+            <summary>
+            Definition of UpdatedDate
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.AddressBook.AddressBook.Status">
+            <summary>
+            Definition of Status
+            </summary>
+        </member>
+        <member name="T:core.Models.Json.City.City">
+            <summary>
+            Definition of City
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Id">
+            <summary>
+            Definition of Id
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Nome">
+            <summary>
+            Definition of Nome
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Provincia">
+            <summary>
+            Definition of Provincia
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Regione">
+            <summary>
+            Definition of Regione
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Nazione">
+            <summary>
+            Definition of Nazione
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Popolazione">
+            <summary>
+            Definition of Popolazione
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Superficie">
+            <summary>
+            Definition of Superficie
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Altitudine">
+            <summary>
+            Definition of Altitudine
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Longitudine">
+            <summary>
+            Definition of Longitudine
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Latitudine">
+            <summary>
+            Definition of Latitudine
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.DataFondazione">
+            <summary>
+            Definition of DataFondazione
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.SitoWeb">
+            <summary>
+            Definition of SitoWeb
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Note">
+            <summary>
+            Definition of SitoWeb
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.CreatedUser">
+            <summary>
+            Definition of CreatedUser
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.CreatedDate">
+            <summary>
+            Definition of CreatedDate
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.UpdatedUser">
+            <summary>
+            Definition of UpdatedUser
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.UpdatedDate">
+            <summary>
+            Definition of UpdatedDate
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.City.City.Status">
+            <summary>
+            Definition of Status
+            </summary>
+        </member>
+        <member name="T:core.Models.Json.Gender.Gender">
+            <summary>
+            Definition of Gender
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.Gender.Gender.Id">
+            <summary>
+            Definition of Id
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.Gender.Gender.Descrizione">
+            <summary>
+            Definition of Descrizione
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.Gender.Gender.CreatedUser">
+            <summary>
+            Definition of CreatedUser
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.Gender.Gender.CreatedDate">
+            <summary>
+            Definition of CreatedDate
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.Gender.Gender.UpdatedUser">
+            <summary>
+            Definition of UpdatedUser
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.Gender.Gender.UpdatedDate">
+            <summary>
+            Definition of UpdatedDate
+            </summary>
+        </member>
+        <member name="P:core.Models.Json.Gender.Gender.Status">
+            <summary>
+            Definition of Status
+            </summary>
+        </member>
+        <member name="T:core.Models.SQLConfig">
+            <summary>
+            SQL Server Configuration 
+            </summary>
+        </member>
+        <member name="P:core.Models.SQLConfig.Server">
+            <summary>
+            Gets or sets the Server.
+            </summary>
+        </member>
+        <member name="P:core.Models.SQLConfig.Password">
+            <summary>
+            Gets or sets the Password.
+            </summary>
+        </member>
+        <member name="P:core.Models.SQLConfig.UserID">
+            <summary>
+            Gets or sets the UserID.
+            </summary>
+        </member>
+        <member name="P:core.Models.SQLConfig.InitialCatalog">
+            <summary>
+            Gets or sets the InitialCatalog.
+            </summary>
+        </member>
+        <member name="M:core.Models.SQLConfig.ToString">
+            <summary>
+            OverrideToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:core.DataModels.BaseModel">
+            <summary>
+            Definition of BaseModel
+            </summary>
+        </member>
+        <member name="F:core.DataModels.BaseModel.connexString">
+            <summary>
+            Definition of connexString
+            </summary>
+        </member>
+        <member name="P:core.DataModels.BaseModel.UserEmail">
+            <summary>
+            Definition of UserEmail
+            </summary>
+        </member>
+        <member name="P:core.DataModels.BaseModel.StartDate">
+            <summary>
+            Definition of SatrtDate
+            </summary>
+        </member>
+        <member name="P:core.DataModels.BaseModel.EndDate">
+            <summary>
+            Definition of SatrtDate
+            </summary>
+        </member>
+        <member name="P:core.DataModels.BaseModel.ReturnDataSet">
+            <summary>
+            Definition of ReturnDataSet
+            </summary>
+        </member>
+        <member name="P:core.DataModels.BaseModel.ProcedureName">
+            <summary>
+            Definition of ProcedureName
+            </summary>
+        </member>
+        <member name="M:core.DataModels.BaseModel.#ctor(Microsoft.Extensions.Options.IOptions{core.Models.SQLConfig})">
+            <summary>
+            Definition of BaseModel
+            </summary>
+        </member>
+        <member name="M:core.DataModels.BaseModel.SerializeResponse">
+            <summary>
+            Definition of SerializeResponse
+            </summary>
+        </member>
+        <member name="M:core.DataModels.BaseModel.SerializeResponse(System.Object)">
+            <summary>
+            Definition of SerializeResponse
+            </summary>
+            <param name="returnObject"></param>
+        </member>
+        <member name="M:core.DataModels.BaseModel.SerializeErrorResponse(System.Exception)">
+            <summary>
+            Definition of SerializeErrorResponse
+            </summary>
+        </member>
+        <member name="M:core.DataModels.BaseModel.TableToList``1(System.Data.DataTable)">
+            <summary>
+            Returns DataTable from List<typeparamref name="T"/>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:core.DataModels.BaseModel.Select">
+            <summary>
+            Definition of SELECT statement
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:core.DataModels.BaseModel.Select(System.Object)">
+            <summary>
+            Definition of SELECT statement
+            </summary>
+            <param name="inputData"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:core.DataModels.BaseModel.SelectByFilter(System.Object)">
+            <summary>
+            Definition of SELECT statement
+            </summary>
+            <param name="inputData"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:core.DataModels.BaseModel.Select(System.Object,System.Object)">
+            <summary>
+            Definition of SELECT statement
+            </summary>
+            <param name="inputData1"></param>
+            <param name="inputData2"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:core.DataModels.BaseModel.Insert(System.Object)">
+            <summary>
+            Definition of INSERT statement
+            </summary>
+        </member>
+        <member name="M:core.DataModels.BaseModel.Insert(System.Object,System.Object)">
+            <summary>
+            Definition of INSERT statement
+            </summary>
+        </member>
+        <member name="M:core.DataModels.BaseModel.Insert(System.Object,System.Object,System.Object)">
+            <summary>
+            Definition of INSERT statement
+            </summary>
+        </member>
+        <member name="M:core.DataModels.BaseModel.Update(System.Object)">
+            <summary>
+            Definition of UPDATE statement
+            </summary>
+        </member>
+        <member name="M:core.DataModels.BaseModel.Update(System.Object,System.Object)">
+            <summary>
+            Definition of UPDATE statement
+            </summary>
+        </member>
+        <member name="M:core.DataModels.BaseModel.Update(System.Object,System.Object,System.Object)">
+            <summary>
+            Definition of UPDATE statement
+            </summary>
+        </member>
+        <member name="M:core.DataModels.BaseModel.Delete(System.Object)">
+            <summary>
+            Definition of DELETE statement
+            </summary>
+        </member>
+        <member name="T:core.DataModels.AddressBookDataModel">
+            <summary>
+            Definition of AddressBookDataModel
+            </summary>
+        </member>
+        <member name="F:core.DataModels.AddressBookDataModel.SQLConfig">
+            <summary>
+            Definition of SQLConfig
+            </summary>
+        </member>
+        <member name="M:core.DataModels.AddressBookDataModel.#ctor(Microsoft.Extensions.Options.IOptions{core.Models.SQLConfig})">
+            <summary>
+            Definition of AddressBookDataModel
+            </summary>
+        </member>
+        <member name="M:core.DataModels.AddressBookDataModel.Select(System.String,core.Models.Json.AddressBook.AddressBook)">
+            <summary>
+            Definition of SelectAddressBook
+            </summary>
+        </member>
+        <member name="M:core.DataModels.AddressBookDataModel.Insert(System.String,System.Collections.Generic.List{core.Models.Json.AddressBook.AddressBook})">
+            <summary>
+            Definition of InsertAddressBook
+            </summary>
+        </member>
+        <member name="M:core.DataModels.AddressBookDataModel.Update(System.String,core.Models.Json.AddressBook.AddressBook)">
+            <summary>
+            Definition of UpdateAddressBook
+            </summary>
+        </member>
+        <member name="M:core.DataModels.AddressBookDataModel.Delete(System.String,System.Collections.Generic.List{core.Models.Json.AddressBook.AddressBook})">
+            <summary>
+            Definition of DeleteAddressBook
+            </summary>
+        </member>
+        <member name="T:core.DataModels.CityDataModel">
+            <summary>
+            Definition of CityDataModel
+            </summary>
+        </member>
+        <member name="F:core.DataModels.CityDataModel.SQLConfig">
+            <summary>
+            Definition of SQLConfig
+            </summary>
+        </member>
+        <member name="M:core.DataModels.CityDataModel.#ctor(Microsoft.Extensions.Options.IOptions{core.Models.SQLConfig})">
+            <summary>
+            Definition of CityDataModel
+            </summary>
+        </member>
+        <member name="M:core.DataModels.CityDataModel.Select(System.String,core.Models.Json.City.City)">
+            <summary>
+            Definition of SelectCity
+            </summary>
+        </member>
+        <member name="M:core.DataModels.CityDataModel.Insert(System.String,System.Collections.Generic.List{core.Models.Json.City.City})">
+            <summary>
+            Definition of InsertCity
+            </summary>
+        </member>
+        <member name="M:core.DataModels.CityDataModel.Update(System.String,core.Models.Json.City.City)">
+            <summary>
+            Definition of UpdateCity
+            </summary>
+        </member>
+        <member name="M:core.DataModels.CityDataModel.Delete(System.String,System.Collections.Generic.List{core.Models.Json.City.City})">
+            <summary>
+            Definition of DeleteCity
+            </summary>
+        </member>
+        <member name="T:core.DataModels.GenderDataModel">
+            <summary>
+            Definition of GenderDataModel
+            </summary>
+        </member>
+        <member name="F:core.DataModels.GenderDataModel.SQLConfig">
+            <summary>
+            Definition of SQLConfig
+            </summary>
+        </member>
+        <member name="M:core.DataModels.GenderDataModel.#ctor(Microsoft.Extensions.Options.IOptions{core.Models.SQLConfig})">
+            <summary>
+            Definition of GenderDataModel
+            </summary>
+        </member>
+        <member name="M:core.DataModels.GenderDataModel.Select(System.String,core.Models.Json.Gender.Gender)">
+            <summary>
+            Definition of SelectGender
+            </summary>
+        </member>
+        <member name="M:core.DataModels.GenderDataModel.Insert(System.String,System.Collections.Generic.List{core.Models.Json.Gender.Gender})">
+            <summary>
+            Definition of InsertGender
+            </summary>
+        </member>
+        <member name="M:core.DataModels.GenderDataModel.Update(System.String,core.Models.Json.Gender.Gender)">
+            <summary>
+            Definition of UpdateGender
+            </summary>
+        </member>
+        <member name="M:core.DataModels.GenderDataModel.Delete(System.String,System.Collections.Generic.List{core.Models.Json.Gender.Gender})">
+            <summary>
+            Definition of DeleteGender
+            </summary>
+        </member>
+    </members>
+</doc>
